@@ -1,0 +1,105 @@
+body {
+  background-color: #666;
+}
+.header{
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.sub_header{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.home{
+  color: white;
+}
+.info{
+  text-align: center;
+  padding-top: 50px;
+}
+
+.typing-animation {
+  width: 100%;
+  font-size: 18px;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typing-text {
+  animation: typing 3s steps(30, end) forwards;
+  width: 0;
+  overflow: hidden;
+}
+
+#line1 {
+  animation-delay: 0s;
+}
+
+#line2 {
+  animation-delay: 3s;
+}
+
+#line3 {
+  animation-delay: 6s;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+#line1:after {
+  content: "Hello! I'm Hritik Kumar, a passionate and dedicated With a strong foundation in programming,";
+  animation: typing 3s steps(30, end) forwards;
+}
+
+#line2:after {
+  content: "I've developed a versatile skill set that includes proficiency in ReactJS, JavaScript, HTML, and CSS,";
+  animation: typing 3s steps(30, end) forwards;
+  animation-delay: 3s;
+}
+
+#line3:after {
+  content: "allowing me to craft innovative and dynamic web applications.";
+  animation: typing 3s steps(30, end) forwards;
+  animation-delay: 6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.image img {
+  display: inline-block;
+  max-width: 50px; /* set a maximum width */
+  height: auto; /* let the browser adjust the height */
+  animation: bounce 2s infinite;
+}
+#git{
+  display: inline-block;
+  max-width: 30px;
+  height: auto;
+}
+#twitter{
+  display: inline-block;
+  max-width: 30px;
+  height: auto;
+}
