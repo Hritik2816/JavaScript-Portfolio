@@ -1,105 +1,90 @@
-body {
-  background-color: #666;
-}
-.header{
-  background-color: gray;
-  color: white;
-  padding: 10px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-.sub_header{
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-}
-.home{
-  color: white;
-}
-.info{
-  text-align: center;
-  padding-top: 50px;
+@font-face {
+  font-family: "Gilroy";
+  src: url(Gilroy-Medium.ttf) format(truetype);
 }
 
-.typing-animation {
+body, html {
+  height: 100%;
   width: 100%;
-  font-size: 18px;
-  font-family: monospace;
-  white-space: nowrap;
-  overflow: hidden;
+  font-family: "Gilroy";
+}
+.nav{
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px, 50px;
+}
+.nav-h1 span{
+  color: palegreen;
+}
+.nav-option a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-left: 40px;
+  font-weight: 600px;
+}
+.nav-option a:hover{
+  color: palegreen;
+  border-bottom: 3px solid black;
 }
 
-.typing-text {
-  animation: typing 3s steps(30, end) forwards;
-  width: 0;
-  overflow: hidden;
+.nav-btn button{
+  background-color: palegreen;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 150px;
+  font-size: 17px;
+  margin-right: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav-btn button:hover{
+  background-color: black;
+  color: palegreen;
 }
 
-#line1 {
-  animation-delay: 0s;
+.herosection{
+  height: 500px;
+  width: 100%;
+  display: flex;
 }
 
-#line2 {
-  animation-delay: 3s;
+.herosection-left{
+  height: 500px;
+  width: 50%;
+  padding: 70px;
+}
+.herosection-left-1{
+  font-size: 25px;
+}
+.herosection-left-2{
+  font-size: 45px;
+  color: palegreen;
+}
+.herosection-left-3{
+  font-size: 25px;
 }
 
-#line3 {
-  animation-delay: 6s;
+.herosection-left-btn button{
+  height: 50px;
+  width: 130px;
+  border-radius: 10px;
+  border: none;
+  color: palegreen;
+  background: #000;
 }
 
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+.herosection-right{
+  height: 500px;
+  width: 50%;
 }
-
-#line1:after {
-  content: "Hello! I'm Hritik Kumar, a passionate and dedicated With a strong foundation in programming,";
-  animation: typing 3s steps(30, end) forwards;
-}
-
-#line2:after {
-  content: "I've developed a versatile skill set that includes proficiency in ReactJS, JavaScript, HTML, and CSS,";
-  animation: typing 3s steps(30, end) forwards;
-  animation-delay: 3s;
-}
-
-#line3:after {
-  content: "allowing me to craft innovative and dynamic web applications.";
-  animation: typing 3s steps(30, end) forwards;
-  animation-delay: 6s;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-.image img {
-  display: inline-block;
-  max-width: 50px; /* set a maximum width */
-  height: auto; /* let the browser adjust the height */
-  animation: bounce 2s infinite;
-}
-#git{
-  display: inline-block;
-  max-width: 30px;
-  height: auto;
-}
-#twitter{
-  display: inline-block;
-  max-width: 30px;
-  height: auto;
+.herosection-right-hrk{
+  padding-top: 40px;
+  border-radius: 100%;
+  margin-left: 100px;
+  
 }
