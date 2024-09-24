@@ -7,17 +7,23 @@ body, html {
   height: 100%;
   width: 100%;
   font-family: "Gilroy";
+  scroll-behavior: smooth;
 }
 .nav{
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 80px;
   width: 100%;
+  z-index: 1;
   align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 5px, 50px;
+
 }
 .nav-h1 span{
-  color: palegreen;
+  color: rgb(112, 247, 112);
 }
 .nav-option a{
   text-decoration: none;
@@ -27,12 +33,12 @@ body, html {
   font-weight: 600px;
 }
 .nav-option a:hover{
-  color: palegreen;
+  color: rgb(112, 247, 112);
   border-bottom: 3px solid black;
 }
 
 .nav-btn button{
-  background-color: palegreen;
+  background-color: rgb(112, 247, 112);
   border-radius: 10px;
   border: none;
   height: 40px;
@@ -44,13 +50,14 @@ body, html {
 }
 .nav-btn button:hover{
   background-color: black;
-  color: palegreen;
+  color: rgb(112, 247, 112);
 }
 
 .herosection{
   height: 500px;
   width: 100%;
   display: flex;
+  padding: 70px;
 }
 
 .herosection-left{
@@ -63,7 +70,7 @@ body, html {
 }
 .herosection-left-2{
   font-size: 45px;
-  color: palegreen;
+  color: rgb(112, 247, 112);
 }
 .herosection-left-3{
   font-size: 25px;
@@ -74,7 +81,7 @@ body, html {
   width: 130px;
   border-radius: 10px;
   border: none;
-  color: palegreen;
+  color: rgb(112, 247, 112);
   background: #000;
 }
 
@@ -87,4 +94,80 @@ body, html {
   border-radius: 100%;
   margin-left: 100px;
   
+}
+
+.about{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  padding-top: 70px;
+}
+.about-left{
+  height: 500px;
+  width: 50%;
+  padding-top: 50px;
+}
+.about-left img{
+  border-radius: 100%;
+  margin-left: 50px;
+}
+.about-right{
+  height: 500px;
+  width: 50%;
+}
+.about-right-1 h2{
+  text-align: center;
+  font-size: 35px;
+  color:rgb(112, 247, 112);
+}
+.about-right-2 p{
+  text-align: start;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.contact{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  padding-top: 70px;
+}
+.contact-left{
+  height: 500px;
+  width: 50%;
+  margin: 50px;
+  border-radius: 50px;
+}
+.contact-left-text{
+  padding: 20px;
+  background-color: rgb(112, 247, 112);
+  margin-right: 70px;
+  font-size: 20px;
+}
+.contact-right{
+  height: 500px;
+  width: 50%;
+  margin: 50px;
+  align-items: center;
+}
+.contact-right input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 10px;
+
+}
+.contact-right textarea{
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.sub-btn button{
+  background-color: rgb(112, 247, 112);
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  width: 150px;
+  font-size: 17px;
+  margin-right: 10px;
+  font-weight: 500;
+  cursor: pointer;
 }

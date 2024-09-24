@@ -1,8 +1,8 @@
-let navH1 = document.querySelector("nav-h1")
-let body = document.querySelector("body")
-navH1.addEventListener("mouseover", function () {
-
-  body.style.display = "none"
-  body.style.backgroundColor = "black"
-
+document.querySelectorAll('a[href = "#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelectorAll(this.getAttribute('href').scrollIntoView({
+      'behavior': smooth,
+    }))
+  });
 })
