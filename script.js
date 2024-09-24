@@ -6,3 +6,11 @@ document.querySelectorAll('a[href = "#"]').forEach(anchor => {
     }))
   });
 })
+
+const subBtns = document.querySelectorAll('.sub-btn');
+
+subBtns.forEach(btn => {
+  btn.addEventListener("click", function () {
+    alert("work in progress");
+  });
+});
