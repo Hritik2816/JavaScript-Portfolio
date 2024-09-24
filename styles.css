@@ -8,7 +8,6 @@ body, html {
   width: 100%;
   font-family: "Gilroy";
   scroll-behavior: smooth;
-  
 }
 .nav{
   position: fixed;
